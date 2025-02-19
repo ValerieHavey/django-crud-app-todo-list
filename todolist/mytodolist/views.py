@@ -3,5 +3,19 @@ from django.http import HttpResponse
 
 # Create your views here.
 def home(request):
-    #Send a simple HTML response
-    return HttpResponse('This is the home page')
+    return render(request, 'home.html')
+
+def create(request):
+    return render(request, 'create.html')
+
+def delete(request):
+    return render(request, 'delete.html')
+
+def detail(request):
+    return render(request, 'detail.html')
+
+def index(request):
+    return render(request, 'index.html')
+
+def update(request):
+    return render(request, 'update.html')
